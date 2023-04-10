@@ -5,7 +5,7 @@ const form = document.getElementById('payment-form');
 form.addEventListener('submit', event => {
   event.preventDefault();
   
-  // Get the form data
+  // Form data (payment-form)
   const username = form.username.value;
   const email = form.email.value;
   const phone = form.phone.value;
@@ -26,7 +26,7 @@ form.addEventListener('submit', event => {
     currency,
   };
 
-  // Make the Volt API request using fetch
+  // Make the Volt API request
   fetch(url, {
     method: 'POST',
     headers: {
